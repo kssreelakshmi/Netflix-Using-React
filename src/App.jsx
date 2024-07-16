@@ -6,11 +6,13 @@ import Login from './Pages/Login.jsx'
 import Profile from './Pages/Profile.jsx'
 import Navbar from './Components/Navbar.jsx'
 import './index.css'
+import AuthContextProvider from './Context/AuthContext.jsx'
 
 function App() {
 
   return (
     <>
+    <AuthContextProvider>
     <Navbar />
     <Routes>
       <Route path='/' element={<Home />} />
@@ -18,6 +20,7 @@ function App() {
       <Route path='/login' element={<Login />} />
       <Route path='/profile' element={<Profile />} />
     </Routes>
+    </AuthContextProvider>
     </>
   )
 }

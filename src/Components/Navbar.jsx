@@ -5,17 +5,19 @@ import CustomSVG from './CustomSVG'
 const Navbar = () => {
   return (
     <div className='absolute w-full flex items-center justify-between p-4 z-50'>
+
         <Link to='/' >
+        
           <CustomSVG />
+      
         {/* <p className=' text-red-600 cursor-pointer'> */}
         {/* <h1 className='uppercase text-red-600 font-nsans-bold cursor-pointer text-5xl'> */}
           
         {/* </p> */}
         </Link>
-
         <div>
         <Link to='/login' >
-        <button className='capitalize pr-4'>Login</button>
+        <button className='capitalize pr-4 '>Login</button>
         </Link>
 
         <Link to='/signup' >

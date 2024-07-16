@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import MovieItem from './MovieItem'
 
 const MovieRow = ({title,url}) => {
   const [movies,setMovies] = useState([])
@@ -14,10 +15,9 @@ const MovieRow = ({title,url}) => {
       <div className='relative flex items-center'>
         <div id={'slider'} className='w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide'>
           {
-            movies.map((movie,index)=>{
-              <h1>{movie.title}</h1>
-              
-            })
+            movies.map((movie)=>
+              <MovieItem key={movie.id} movie={movie} />
+            )
           }
         </div>
       </div>

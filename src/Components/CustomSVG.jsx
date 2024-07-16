@@ -17,7 +17,7 @@ const CustomSVG = () => {
           xmlnsXlink="http://www.w3.org/1999/xlink" 
           aria-hidden="true" 
           role="img" 
-          className=' text-red-600 cursor-pointer'
+          className='absolute text-red-600 cursor-pointer w-full pr-[85%]  '
         >
           <g>
             <path 

@@ -12,6 +12,10 @@ const Home = () => {
     <MovieRow title='topRated' url={endpoints.topRated} />
     <MovieRow title='comedy' url={endpoints.comedy}/>
     <MovieRow title='popular' url={endpoints.popular}/>
+    <MovieRow title='action' url={endpoints.action}/>
+    <MovieRow title='horror' url={endpoints.horror}/>
+    <MovieRow title='romance' url={endpoints.romance}/>
+    <MovieRow title='documentaries' url={endpoints.documentaries}/>
     
     </>
   )
