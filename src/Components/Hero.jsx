@@ -25,7 +25,7 @@ const Hero = () => {
             <p>fetching movie...</p>
             </>
 );
-    const {title,backdrop_path,release_date,overview,video} = movie
+    const {title,backdrop_path,release_date,overview} = movie
 
   return (
 
@@ -35,8 +35,8 @@ const Hero = () => {
                 <img className='w-full h-full object-cover object-top' src = {createImageUrl(backdrop_path,'original')} alt={title} />
             <div className='absolute w-full top-[10%] lg:top-[25%] p-4 md:p-8'>
                 <h1 className='text-3xl md:text-5xl font-nsans-bold'>{title}</h1>
-                <div className='m-8 mb-4'>
-                    <button className='capitalize border bg-gray-300 text-black py-2 px-5 ml-4'>Play</button>
+                <div className='my-8 mb-4'>
+                    <button className='capitalize border bg-gray-300 text-black py-2 px-5 '>Play</button>
                     <button className='capitalize border bg-gray-300 text-black py-2 px-5 ml-4'>Watch later</button>
                 </div>
                 <p className='text-gray-400 text-sm'>{release_date}</p>

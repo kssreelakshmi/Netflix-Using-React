@@ -7,6 +7,7 @@ import Profile from './Pages/Profile.jsx'
 import Navbar from './Components/Navbar.jsx'
 import './index.css'
 import AuthContextProvider from './Context/AuthContext.jsx'
+import ProtectedRoute from './Components/ProtectedRoute.jsx'
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
       <Route path='/' element={<Home />} />
       <Route path='/signup' element={<Signup />} />
       <Route path='/login' element={<Login />} />
-      <Route path='/profile' element={<Profile />} />
+      <Route path='/profile' element={<ProtectedRoute><Profile /></ProtectedRoute>} />
     </Routes>
     </AuthContextProvider>
     </>
