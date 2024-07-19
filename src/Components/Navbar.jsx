@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import CustomSVG from './CustomSVG'
 import { UserAuth } from '../Context/AuthContext'
 import Netflix from '../assets/netflix.png'
 
@@ -22,7 +21,7 @@ const Navbar = () => {
     <div className='absolute w-full flex items-center justify-between p-4 z-50'>
 
         <Link to='/' >
-          <img src={Netflix} alt="Netflix Logo" className='w-full mx-4 h-[125px] cursor-pointer'/>
+          <img src={Netflix} alt="Netflix Logo" className='w-full mx-4 h-[65px] cursor-pointer'/>
         
         </Link>
         {user?.email? (<div>
